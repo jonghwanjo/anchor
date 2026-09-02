@@ -260,8 +260,15 @@ footer.site {
   border-top: 1px solid var(--rule);
   font-size: 12px;
   color: var(--muted);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 8px;
+}
+
+footer.site .contact {
+  margin: 0 0 10px;
+  line-height: 1.9;
+}
+
+footer.site .contact a:hover { color: var(--accent-brand); }
+
+footer.site .copyright {
+  display: block;
 }
