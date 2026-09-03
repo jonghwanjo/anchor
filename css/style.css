@@ -110,6 +110,21 @@ header.hero .hero-name {
   border-top: 1px solid var(--rule);
 }
 
+.page-section.accent-estate { border-top: 2px solid var(--accent-estate); }
+.page-section.accent-conversion { border-top: 2px solid var(--accent-conversion); }
+
+.section-tag {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: var(--muted);
+  margin: 0 0 12px;
+}
+
+.section-tag.accent-estate { color: var(--accent-estate); }
+.section-tag.accent-conversion { color: var(--accent-conversion); }
+
 .page-section h2 {
   font-size: 18px;
   font-weight: 700;
