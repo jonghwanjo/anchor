@@ -45,51 +45,191 @@ a:hover { color: var(--accent-brand); }
   padding: 64px 24px 96px;
 }
 
-header.site {
+/* Hero */
+header.hero {
   border-bottom: 1px solid var(--rule);
-  padding-bottom: 32px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 8px;
 }
 
-header.site h1 {
-  font-size: 28px;
+header.hero h1 {
+  font-size: 25px;
   font-weight: 700;
-  margin: 0 0 8px;
+  line-height: 1.55;
+  margin: 0 0 14px;
 }
 
-header.site p.role {
-  font-size: 14px;
+header.hero .hero-name {
+  font-size: 15px;
   color: var(--muted);
+  margin: 0 0 28px;
+}
+
+.expertise {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--rule);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 0;
+  font-size: 13.5px;
+  color: var(--ink);
+}
+
+.expertise li {
+  padding: 0 16px;
+  border-left: 1px solid var(--rule);
+}
+
+.expertise li:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.quicknav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  margin-top: 24px;
+  font-size: 13px;
+}
+
+.quicknav a {
+  color: var(--muted);
+}
+
+.quicknav a:hover {
+  color: var(--accent-brand);
+}
+
+/* Content sections (정비사업, 법인 자문, 경력, Insights, 문의) */
+.page-section {
+  padding-top: 44px;
+  margin-top: 44px;
+  border-top: 1px solid var(--rule);
+}
+
+.page-section h2 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 16px;
+}
+
+.page-section h2 .en {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  margin-top: 4px;
+}
+
+.page-section h3 {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+  margin: 28px 0 12px;
+}
+
+.page-section > p {
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin: 0 0 14px;
+}
+
+.service-list,
+.case-list,
+.committee-list,
+.career-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.service-list li,
+.case-list li,
+.committee-list li,
+.career-list li {
+  padding-left: 14px;
+  position: relative;
+}
+
+.service-list li::before,
+.case-list li::before,
+.committee-list li::before,
+.career-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background: var(--muted);
+  border-radius: 50%;
+}
+
+.section-label {
+  font-size: 13px;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  font-weight: 700;
   margin: 0 0 20px;
 }
 
-.tracks {
+.filter-tags {
   display: flex;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 24px;
 }
 
-.tracks span {
+.filter-tag {
+  font: inherit;
   font-size: 12px;
   letter-spacing: 0.04em;
   padding: 6px 12px;
   border: 1px solid var(--rule);
   border-radius: 999px;
+  background: transparent;
   color: var(--muted);
+  cursor: pointer;
 }
 
-.tracks span.conversion { border-color: var(--accent-conversion); color: var(--accent-conversion); }
-.tracks span.startup { border-color: var(--accent-startup); color: var(--accent-startup); }
-.tracks span.estate { border-color: var(--accent-estate); color: var(--accent-estate); }
-.tracks span.news { border-color: var(--accent-news); color: var(--accent-news); }
+.filter-tag:hover { color: var(--accent-brand); border-color: var(--accent-brand); }
+.filter-tag.active { color: #fff; background: var(--ink); border-color: var(--ink); }
 
-main h2.section {
-  font-size: 13px;
-  letter-spacing: 0.12em;
-  color: var(--muted);
+.inquiry p { margin-bottom: 0; }
+
+/* Insights archive page (insights.html) */
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h1 {
+  font-size: 22px;
   font-weight: 700;
-  margin: 0 0 24px;
+  margin: 0 0 10px;
 }
+
+.page-header p {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.view-all {
+  display: inline-block;
+  margin-top: 4px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.view-all:hover { color: var(--accent-brand); }
 
 .post-list {
   list-style: none;
