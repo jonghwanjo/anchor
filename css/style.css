@@ -369,7 +369,8 @@ article.post h1 {
   color: var(--ink);
 }
 
-.post-body ul {
+.post-body ul,
+.post-body ol {
   margin: 0 0 20px;
   padding-left: 20px;
 }
