@@ -242,9 +242,10 @@ header.hero .hero-name {
 
 .view-all {
   display: inline-block;
-  margin-top: 4px;
-  font-size: 13px;
-  color: var(--muted);
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
 }
 
 .view-all:hover { color: var(--accent-brand); }
