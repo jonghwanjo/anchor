@@ -370,6 +370,14 @@ article.post h1 {
   color: var(--ink);
 }
 
+.post-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 8px 0 28px;
+  border-radius: 6px;
+}
+
 .post-body ul,
 .post-body ol {
   margin: 0 0 20px;
