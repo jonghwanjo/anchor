@@ -276,6 +276,7 @@ header.hero .hero-name {
 .post-list .category.conversion { color: var(--accent-conversion); }
 .post-list .category.startup { color: var(--accent-startup); }
 .post-list .category.estate { color: var(--accent-estate); }
+.post-list .category.lecture { color: var(--accent-estate); }
 .post-list .category.news { color: var(--accent-news); }
 
 .post-list h3 {
@@ -322,6 +323,7 @@ article.post header {
 .category.conversion { color: var(--accent-conversion); }
 .category.startup { color: var(--accent-startup); }
 .category.estate { color: var(--accent-estate); }
+.category.lecture { color: var(--accent-estate); }
 .category.news { color: var(--accent-news); }
 
 article.post h1 {
